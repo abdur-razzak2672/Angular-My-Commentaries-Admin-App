@@ -1,5 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
  @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+ @import "~ngx-toastr/toastr";
 
 :root {
 
@@ -55,4 +56,9 @@ body{
     color: #fff;
     width: 140px;
 }
-
+.btn-theme{
+      border: none;
+    background-color: var(--primer-color);
+    font-size: 13px;
+    color: #fff;
+ }
