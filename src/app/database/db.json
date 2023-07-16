@@ -1,0 +1,14 @@
+{
+  "category": [
+    { "id": 1, "category": "Video","status": true },
+    { "id": 2, "category": "Audio","status": true },
+    { "id": 3, "category": "Image","status": true },
+    { "id": 4, "category": "Text","status": true },
+    { "id": 5, "category": "Other","status": true }
+  ],
+
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
