@@ -11,6 +11,10 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CategoriesComponent } from './categories/categories/categories.component';
+import { AllPostComponent } from './post/all-post/all-post.component';
+import { NewPostComponent } from './post/new-post/new-post.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +23,9 @@ import { CategoriesComponent } from './categories/categories/categories.componen
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    AllPostComponent,
+    NewPostComponent
    ],
   imports: [
     BrowserModule,
@@ -28,6 +34,8 @@ import { CategoriesComponent } from './categories/categories/categories.componen
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule addedz
     NgxSpinnerModule,
+    AngularEditorModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
