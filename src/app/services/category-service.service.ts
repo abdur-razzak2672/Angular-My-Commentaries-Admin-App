@@ -18,6 +18,12 @@ export class CategoryServiceService {
      return this.http.get<Category[]>(this.url+"?_sort=id&_order=desc"+`&_page=${page}&_limit=${pageLimit}`);
 
  }
+
+ getCategoryList():Observable<Category[]>{
+ 
+     return this.http.get<Category[]>(this.url+"?_sort=id&_order=desc");
+
+ }
   addCategoryData(data:Category){
     return this.http.post(this.url,data);
   }
