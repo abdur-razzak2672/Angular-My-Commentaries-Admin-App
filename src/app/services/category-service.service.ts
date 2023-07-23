@@ -8,13 +8,11 @@ import { Observable } from 'rxjs';
 })
 export class CategoryServiceService {
 
- 
   constructor(private http:HttpClient) {}
   url = 'http://localhost:3000/category';
 
   getAllCategory(page:number,pageLimit:number):Observable<Category[]>{
-  //  return this.http.get<Category[]>(this.url+"?_sort=id&_order=desc"+'&page=7&_limit=7');
-
+ 
      return this.http.get<Category[]>(this.url+"?_sort=id&_order=desc"+`&_page=${page}&_limit=${pageLimit}`);
 
  }

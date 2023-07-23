@@ -64,13 +64,98 @@
       "category": "razzak7",
       "status": true,
       "id": 13
+    },
+    {
+      "category": "bhai",
+      "status": true,
+      "id": 14
+    },
+    {
+      "category": "tan",
+      "status": true,
+      "id": 15
     }
   ],
-  "comments": [
+  "post": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "How to Learn Angular Js",
+      "pmalink": "how-to-learn-angular-js",
+      "category": {
+        "id": "1",
+        "category": "Video"
+      },
+      "excerpt": "My Commentaries Admin\nDeveloped By: Abdur Razzak , Using  Angular 16 &  Bootstrap 5\nAll rights reserved © 2023 My Commentaries",
+      "imageUrl": "https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg?size=626&ext=jpg",
+      "content": "<div class=\"site-logo mx-4\">My Commentaries Admin</div><div class=\"footer text-center\">Developed By:&#160;<span class=\"text-warning font-weight-normal\">Abdur Razzak</span>&#160;, Using&#160;<span class=\"fab fa-angular\"></span>&#160;Angular 16 &amp;&#160;<span class=\"fab fa-bootstrap\"></span>&#160;Bootstrap 5</div><p>All rights reserved &#169; 2023 My Commentaries</p>",
+      "image": "https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg?size=626&ext=jpg",
+      "isFeatured": false,
+      "isActive": true,
+      "createdAt": "2023-07-23T11:37:22.682Z",
+      "id": 2
+    },
+    {
+      "title": "Learn To JavaScript",
+      "pmalink": "learn-to-javascript",
+      "category": {
+        "id": "6",
+        "category": "razzak"
+      },
+      "excerpt": "Add New Post\nFrom here you can add new post\nAdd New Post\nFrom here you can add new post",
+      "imageUrl": "https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg?w=2000",
+      "content": "<h1 class=\"app-text-theme\">Add New Post</h1><p class=\"amb-5\">From here you can add new post</p>",
+      "image": "https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg?w=2000",
+      "isFeatured": false,
+      "isActive": true,
+      "createdAt": "2023-07-23T07:21:00.715Z",
+      "id": 3
+    },
+    {
+      "title": "How Make Static Website use Angular js",
+      "pmalink": "how-make-static-website-use-angular-js",
+      "category": {
+        "id": "10",
+        "category": "razzak4"
+      },
+      "excerpt": "My Commentaries Admin\nDeveloped By: Abdur Razzak , Using  Angular 16 &  Bootstrap 5\nAll rights reserved © 2023 My Commentaries",
+      "imageUrl": "https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg?w=826&t=st=1690109183~exp=1690109783~hmac=2bb191369184060cfab4133d2f88f3c7f26345a368a642bb389200238decf556",
+      "content": "<div class=\"site-logo mx-4\"><div class=\"site-logo mx-4\">My Commentaries Admin</div><div class=\"footer text-center\">Developed By:&#160;<span class=\"text-warning font-weight-normal\">Abdur Razzak</span>&#160;, Using&#160;<span class=\"fab fa-angular\"></span>&#160;Angular 16 &amp;&#160;<span class=\"fab fa-bootstrap\"></span>&#160;Bootstrap 5</div><p>All rights reserved &#169; 2023 My Commentaries</p></div>",
+      "image": "https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg?w=826&t=st=1690109183~exp=1690109783~hmac=2bb191369184060cfab4133d2f88f3c7f26345a368a642bb389200238decf556",
+      "isFeatured": false,
+      "isActive": true,
+      "createdAt": "2023-07-23T11:37:13.454Z",
+      "id": 4
+    },
+    {
+      "title": "How to earn money without work",
+      "pmalink": "how-to-earn-money-without-work",
+      "category": {
+        "id": "3",
+        "category": "Image"
+      },
+      "excerpt": "sell Your kidney w u will get 1core   and sell Your kidney w u will get 1core   and sell Your kidney w u will get 1core   and sell Your kidney w u will get 1core   and ",
+      "imageUrl": "https://t3.ftcdn.net/jpg/06/11/61/08/240_F_611610871_UZX1VXc4wJLPibvAJ5Nx2P1QTKEmb7Pb.jpg",
+      "content": "<div class=\"site-logo mx-4\">My Commentaries Admin</div><div class=\"footer text-center\">Developed By:&#160;<span class=\"text-warning font-weight-normal\">Abdur Razzak</span>&#160;, Using&#160;<span class=\"fab fa-angular\"></span>&#160;Angular 16 &amp;&#160;<span class=\"fab fa-bootstrap\"></span>&#160;Bootstrap 5</div><p>All rights reserved &#169; 2023 My Commentaries</p>",
+      "image": "https://t3.ftcdn.net/jpg/06/11/61/08/240_F_611610871_UZX1VXc4wJLPibvAJ5Nx2P1QTKEmb7Pb.jpg",
+      "isFeatured": false,
+      "isActive": true,
+      "createdAt": "2023-07-23T11:43:33.221Z",
+      "id": 5
+    },
+    {
+      "title": "Sell Your Kidney to earn money",
+      "pmalink": "sell-your-kidney-to-earn-money",
+      "category": {
+        "id": "1",
+        "category": "Video"
+      },
+      "excerpt": "taka lagbe taka lagbetaka lagbetaka lagbetaka lagbetaka lagbetaka lagbetaka lagbetaka lagbe",
+      "imageUrl": "https://img.freepik.com/free-photo/residential-brick-house_1388-112.jpg?w=826&t=st=1690112771~exp=1690113371~hmac=42a582a7e44d8a8ac934ca440acb49ff9dcf10f9ea4c7a2818d61a4429a02d0b",
+      "content": "<div class=\"site-logo mx-4\">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; My Commentaries Admin</div><div class=\"footer text-center\">Developed By:&#160;<span class=\"text-warning font-weight-normal\">Abdur Razzak</span>&#160;, Using&#160;<span class=\"fab fa-angular\"></span>&#160;Angular 16 &amp;&#160;<span class=\"fab fa-bootstrap\"></span>&#160;Bootstrap 5</div><p>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;All rights reserved &#169; 2023 My Commentaries</p>",
+      "image": "https://img.freepik.com/free-photo/residential-brick-house_1388-112.jpg?w=826&t=st=1690112771~exp=1690113371~hmac=42a582a7e44d8a8ac934ca440acb49ff9dcf10f9ea4c7a2818d61a4429a02d0b",
+      "isFeatured": false,
+      "isActive": true,
+      "createdAt": "2023-07-23T11:48:57.810Z",
+      "id": 6
     }
   ],
   "profile": {

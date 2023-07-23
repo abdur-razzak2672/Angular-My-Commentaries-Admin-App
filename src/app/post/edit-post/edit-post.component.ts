@@ -6,21 +6,23 @@ import { PostService } from 'src/app/services/post.service';
 import { ToastrService } from 'ngx-toastr';
  import { NgxSpinnerService } from 'ngx-spinner'; 
  import { Router } from '@angular/router';
+ import { ActivatedRoute } from '@angular/router';
 @Component({
-  selector: 'app-new-post',
-  templateUrl: './new-post.component.html',
-  styleUrls: ['./new-post.component.css']
+  selector: 'app-edit-post',
+  templateUrl: './edit-post.component.html',
+  styleUrls: ['./edit-post.component.css']
 })
-export class NewPostComponent implements OnInit {
-
-
+export class EditPostComponent implements OnInit {
+  
   permalink: string = '';
   imgSrc: any = './assets/placeholder-image.jpg';
   selectedImg: any = "";
   cateogylist: Array<any> = [];
-  postForm: FormGroup
+  postForm: FormGroup;
+  postDataDetail: any=[];
+  id :any;
  
-
+ 
 
   constructor(
     private categoryService: CategoryServiceService,
@@ -28,10 +30,11 @@ export class NewPostComponent implements OnInit {
     private postService: PostService,
     private toastr: ToastrService,
    private spinner: NgxSpinnerService,
-    private  router:Router
+    private  router:Router,
+    private route: ActivatedRoute
   ) {
     this.postForm = this.formBuilder.group({
-      title: ["", [Validators.required, Validators.minLength(10)]],
+      title: [this.postDataDetail.title, [Validators.required, Validators.minLength(10)]],
       pmalink: ["", [Validators.required]],
       category: ["", [Validators.required]],
       excerpt: ["", [Validators.required, Validators.minLength(50)]],
@@ -42,14 +45,48 @@ export class NewPostComponent implements OnInit {
     });
 
   }
-
+ 
   ngOnInit(): void {
+
+    this.getAllPost();
+
+    
+
     this.categoryService.getCategoryList().subscribe((data: any) => {
       this.cateogylist = data;
       console.log(this.cateogylist);
     })
   }
 
+  getAllPost(): void {
+    this.id = this.route.snapshot.paramMap.get('id');
+    this.spinner.show();
+    this.postService.PostDetail(this.id).subscribe(
+      (data: any) => {
+        this.postDataDetail = data;
+        this.spinner.hide();
+        this.imgSrc = this.postDataDetail.image;
+
+        
+  
+         this.postForm.patchValue({
+          title: this.postDataDetail.title,
+          pmalink: this.postDataDetail.pmalink,
+          category: this.postDataDetail.category.id + '-' + this.postDataDetail.category.category,
+          excerpt: this.postDataDetail.excerpt,
+          imageUrl: this.postDataDetail.imageUrl,
+          content: this.postDataDetail.content,
+         });
+      },
+      (error) => {
+        // Handle the error if necessary
+        console.error('Error fetching post data:', error);
+        this.spinner.hide();
+      }
+    );
+  }
+  
+ 
   get fc() {
     return this.postForm.controls;
   }
@@ -61,7 +98,7 @@ export class NewPostComponent implements OnInit {
   }
 
   showPreview($event: any) {
-    const file = $event.target.files[0];
+     const file = $event.target.files[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = (e: any) => {
@@ -98,10 +135,9 @@ export class NewPostComponent implements OnInit {
 
     }
 
-    this.postService.addPostData(postData).subscribe((data:any) => {
-      this.toastr.success('Post Added Successfully');
-      this.postForm.reset();
-      this.router.navigate(['/posts']);
+    this.postService.updatePostData(postData,this.id).subscribe((data:any) => {
+      this.toastr.success('Post Updated Successfully');
+       this.router.navigate(['/posts']);
 
       console.log(data);
     })
@@ -110,5 +146,6 @@ export class NewPostComponent implements OnInit {
 
     console.log(postData);
   }
+
 
 }
