@@ -13,4 +13,47 @@
         </div>
 
     </div>
+
+    <div class="row my-5">
+        <div class="col-md-12">
+            <div class="card shadow-effect">
+                <div class="card-body">
+                    <table class="table row-border hover">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Image</th>
+                                <th style="width: 200px;">Title</th>
+                                <th>Category</th>
+                                <th>Excerpt</th>
+                                <th>Date</th>
+                                <th style="width: 160px;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let post of postData">
+                                <td>{{post.id}}</td>
+                                <td><img [src]="post.imageUrl" class="img-fluid" width="50px"></td>
+                                <td>{{post.title}}</td>
+                                <td> {{post.category.category}}
+                                </td>
+                                <td>{{post.excerpt}}</td>
+                                <td>{{post.createdAt | date:'medium'}}</td>
+                                <td>
+                                    <button class="btn btn-sm  mx-2 app-theme  text-light"  routerLink="/posts/edit/{{post.id}}"><i
+                                        class="fa-solid fa-edit"></i></button>
+                                    <button class="btn btn-sm btn-danger" (click)="deletePost(post.id)"><i
+                                        class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <button class="btn btn-sm text-light app-theme mr-2" (click)="goToPreviousPage()" [disabled]="currentPage === 1">Previous</button>
+                        <button class="btn btn-sm text-light app-theme" (click)="goToNextPage()" [disabled]="currentPage === totalPages">Next</button>
+                      </div>
+                </div>
+            </div>
+
+        </div>
  </div>
