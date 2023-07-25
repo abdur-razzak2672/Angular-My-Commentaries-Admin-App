@@ -38,7 +38,6 @@ export class AllPostComponent implements OnInit {
        this.postData = data;
        this.totalPages = (data.length/2);
        console.log("dfgsd",this.totalPages);
- 
         // Hide the spinner
        this.spinner.hide();
      });
