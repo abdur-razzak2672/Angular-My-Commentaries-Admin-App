@@ -66,9 +66,7 @@ export class EditPostComponent implements OnInit {
         this.postDataDetail = data;
         this.spinner.hide();
         this.imgSrc = this.postDataDetail.image;
-
-        
-  
+ 
          this.postForm.patchValue({
           title: this.postDataDetail.title,
           pmalink: this.postDataDetail.pmalink,
