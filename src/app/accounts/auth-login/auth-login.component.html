@@ -1,0 +1,50 @@
+<!-- Add this where you want to render the Google Sign-In button -->
+ <div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            
+<div *ngIf="!user">
+
+    <form (ngSubmit)="onSubmit()" >
+ 
+            <div class="text-center">
+                <img src='/assets/logo.png' alt="logo" class="img-fluid"  >
+        </div>
+        <h4 class="text-center text-dark">Sign in Admin</h4>
+        <div class="form-group mt-2">
+          <label class="text-dark" for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         </div>
+        <div class="form-group">
+          <label class="text-dark" for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn text-light w-100 btn-login">Login</button>
+      </form>
+
+      <div class="text-center mt-3">   sign in with Google
+    </div>
+      <div class="mt-2 d-flex justify-content-center">
+         
+         <asl-google-signin-button type="icon" size="large"> 
+        </asl-google-signin-button>
+ 
+      </div>
+ </div>
+
+        </div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+ </div>
+
+<div *ngIf="user">
+    <app-dashboard></app-dashboard>
+</div>
+
+
+
+ 
