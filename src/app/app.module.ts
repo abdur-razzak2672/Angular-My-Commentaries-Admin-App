@@ -16,8 +16,14 @@ import { NewPostComponent } from './post/new-post/new-post.component';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditPostComponent } from './post/edit-post/edit-post.component';
+import { AuthLoginComponent } from './accounts/auth-login/auth-login.component';
+import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import {
+  GoogleLoginProvider,
+ } from '@abacritt/angularx-social-login';
 
-
+ import { GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+   
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +33,8 @@ import { EditPostComponent } from './post/edit-post/edit-post.component';
     CategoriesComponent,
     AllPostComponent,
     NewPostComponent,
-    EditPostComponent
+    EditPostComponent,
+    AuthLoginComponent
    ],
   imports: [
     BrowserModule,
@@ -38,9 +45,31 @@ import { EditPostComponent } from './post/edit-post/edit-post.component';
     NgxSpinnerModule,
     AngularEditorModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SocialLoginModule,
+    GoogleSigninButtonModule
+    
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '196096493900-dneidtnql4aeq1hrh703gtc4voqrnc88.apps.googleusercontent.com'
+            )
+          },
+           
+        ],
+        onError: (err) => {
+          console.error(err);
+        }
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

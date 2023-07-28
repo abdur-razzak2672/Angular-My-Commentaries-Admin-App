@@ -114,8 +114,7 @@ export class EditPostComponent implements OnInit {
   onSubmit() {
 
     const splitted = this.postForm.value.category.split('-');
-
-
+ 
     const postData = {
       title: this.postForm.value.title,
       pmalink: this.postForm.value.pmalink,
