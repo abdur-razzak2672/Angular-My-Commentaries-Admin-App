@@ -604,58 +604,155 @@
   ],
   "feedback": [
     {
-      "comment": "ow",
-      "ratitng": 4,
+      "comment": "\n...\nDesignFeatureViews : 1056\nHow Make Static Website use Angular js\nMy Commentaries Admin Developed By: Abdur Razzak , Using Angular 16 & Bootstrap 5 All rights reserved © 2023 My Commentariesc\n\nLast updated 2 day 11 hour 44 min ago\n",
+      "ratitng": 5,
       "postId": 2,
       "name": "Abdur Razzak",
-      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
-      "createdAt": "2023-07-28T12:05:05.515Z",
-      "id": 4
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfbWvLzkOzUPR6VJD1ES7i_3b-CcVrxueAjBg9RUUy3ODg=s96-c",
+      "createdAt": "2023-07-28T23:05:41.251Z",
+      "id": 23
     },
     {
       "comment": "nice",
-      "ratitng": 1,
-      "postId": 2,
+      "ratitng": 4,
+      "postId": 4,
       "name": "Abdur Razzak",
       "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
-      "createdAt": "2023-07-28T12:06:06.577Z",
-      "id": 5
+      "createdAt": "2023-07-30T03:32:21.883Z",
+      "id": 24
     },
     {
-      "comment": "valo na",
+      "comment": "valo valo",
       "ratitng": 3,
-      "postId": 3,
-      "name": "Abdur Razzak",
-      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
-      "createdAt": "2023-07-28T12:09:13.887Z",
-      "id": 6
-    },
-    {
-      "comment": "valoito",
-      "ratitng": 5,
-      "postId": 3,
+      "postId": 4,
       "name": "Abdur Razzak",
       "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfbWvLzkOzUPR6VJD1ES7i_3b-CcVrxueAjBg9RUUy3ODg=s96-c",
-      "createdAt": "2023-07-28T12:14:24.553Z",
-      "id": 7
+      "createdAt": "2023-07-30T06:22:00.800Z",
+      "id": 25
     },
     {
       "comment": "",
       "ratitng": 4,
-      "postId": 5,
+      "postId": 4,
       "name": "Abdur Razzak",
-      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfbWvLzkOzUPR6VJD1ES7i_3b-CcVrxueAjBg9RUUy3ODg=s96-c",
-      "createdAt": "2023-07-28T12:15:26.548Z",
-      "id": 8
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
+      "createdAt": "2023-07-30T09:28:28.410Z",
+      "id": 26
     },
     {
-      "comment": "wow",
-      "ratitng": 4,
-      "postId": 5,
+      "comment": "",
+      "ratitng": 5,
+      "postId": 3,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
+      "createdAt": "2023-07-31T09:51:43.859Z",
+      "id": 27
+    }
+  ],
+  "reply": [
+    {
+      "commentId": 23,
       "name": "Abdur Razzak",
       "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfbWvLzkOzUPR6VJD1ES7i_3b-CcVrxueAjBg9RUUy3ODg=s96-c",
-      "createdAt": "2023-07-28T12:15:39.950Z",
-      "id": 9
+      "comment": "Yes it is also a good idea",
+      "createdAt": "2023-07-28T23:02:45.679Z",
+      "id": 23
+    },
+    {
+      "commentId": 23,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
+      "comment": "no. ki habijabi likhsen",
+      "createdAt": "2023-07-28T23:10:40.349Z",
+      "id": 24
+    },
+    {
+      "commentId": 24,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
+      "comment": "thanks",
+      "createdAt": "2023-07-30T03:32:32.803Z",
+      "id": 25
+    },
+    {
+      "commentId": 24,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfbWvLzkOzUPR6VJD1ES7i_3b-CcVrxueAjBg9RUUy3ODg=s96-c",
+      "comment": "yeah",
+      "createdAt": "2023-07-30T03:33:16.266Z",
+      "id": 26
+    },
+    {
+      "commentId": 26,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
+      "comment": "thanks for rating",
+      "createdAt": "2023-07-30T09:28:50.364Z",
+      "id": 27
+    },
+    {
+      "commentId": 23,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfyZW7PLTKrXMd44ebCBJ8wmZk9XTj6AcGDIkD_f9dQdg=s96-c",
+      "comment": "My Commentaries Admin Home Category About Contact Profile Image Abdur Razzak ... Design Featured views : 1200 Last Updated : 12/12/2021 How to Learn Angular Js My Commentaries Admin Developed By: Abdur Razzak , Using  Angular 16 &  Bootstrap 5 All rights reserved © 2023 My Commentaries   Leave a Comment You can leave a comment using this comment form  Profile Image Abdur Razzak Enter Your Ratting ★★★★★ Comment Enter your comment Comments (1)  Abdur Razzak ★★★★★ 13h ago ... DesignFeatureViews : 1056 How Make Static Website use Angular js My Commentaries Admin Developed By: Abdur Razzak , Using Angular 16 & Bootstrap 5 All rights reserved © 2023 My Commentariesc Last updated 2 day 11 hour 44 min ago  Hide Replies  Abdur Razzak Last Updated - Sep 20, 2023 Yes it is also a good idea   Abdur Razzak Last Updated - Sep 20, 2023 no. ki habijabi likhsen  Enter your reply Field is required",
+      "createdAt": "2023-07-30T10:54:47.428Z",
+      "id": 28
+    },
+    {
+      "commentId": 26,
+      "name": "Abdur Razzak",
+      "photoUrl": "https://lh3.googleusercontent.com/a/AAcHTtfbWvLzkOzUPR6VJD1ES7i_3b-CcVrxueAjBg9RUUy3ODg=s96-c",
+      "comment": "ho",
+      "createdAt": "2023-08-01T11:21:33.768Z",
+      "id": 29
+    }
+  ],
+  "subscribed": [
+    {
+      "id": 1,
+      "name": "Abdur Razzak",
+      "email": "razzak1727@gmil.com",
+      "createdAt": "2023-07-30T03:33:16.266Z"
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "createdAt": "2023-07-30T09:12:45.641Z",
+      "id": 2
+    },
+    {
+      "name": "rana",
+      "email": "rana@gmail.com",
+      "createdAt": "2023-07-30T09:13:40.895Z",
+      "id": 3
+    },
+    {
+      "name": "h",
+      "email": "@",
+      "createdAt": "2023-07-30T09:23:10.545Z",
+      "id": 4
+    },
+    {
+      "name": "k",
+      "email": "kk@",
+      "createdAt": "2023-07-31T05:50:26.086Z",
+      "id": 5
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "name": "Abdur Razzak",
+      "email": "abdur@gmail.com",
+      "message": "hello",
+      "createdAt": "2023-07-30T03:33:16.266Z"
+    },
+    {
+      "name": "as",
+      "email": "asas@",
+      "message": "sa",
+      "createdAt": "2023-07-31T10:15:57.515Z",
+      "id": 2
     }
   ]
 }
