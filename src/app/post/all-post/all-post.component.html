@@ -5,8 +5,8 @@
                 <div class="card-body text-center">
                     <h3 class="app-text-theme">All Blog Posts</h3>
                     <p>From here you can manage your blog posts</p>
-                    <button routerLink="/posts/new" class="btn text-light app-theme">Add New Post</button>
-                    <button routerLink="/" class="btn btn-warning mx-2">Back to Dashboard</button>
+                    <button routerLink="/posts/new" class="btn text-light app-theme  mt-1">Add New Post</button>
+                    <button routerLink="/" class="btn btn-warning mt-1 mx-2">Back to Dashboard</button>
                 </div>
 
             </div>
@@ -40,9 +40,9 @@
                                 <td>{{post.excerpt}}</td>
                                 <td>{{post.createdAt | date:'medium'}}</td>
                                 <td>
-                                    <button class="btn btn-sm  mx-2 app-theme  text-light"  routerLink="/posts/edit/{{post.id}}"><i
+                                    <button class="btn btn-sm  mx-1 app-theme  text-light"  routerLink="/posts/edit/{{post.id}}"><i
                                         class="fa-solid fa-edit"></i></button>
-                                    <button class="btn btn-sm btn-danger" (click)="deletePost(post.id)"><i
+                                    <button class="btn  mx-1 mt-1 btn-sm btn-danger" (click)="deletePost(post.id)"><i
                                         class="fa-solid fa-trash"></i></button>
                                 </td>
                             </tr>
