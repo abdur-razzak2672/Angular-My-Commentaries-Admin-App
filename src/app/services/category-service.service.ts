@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class CategoryServiceService {
 
   constructor(private http:HttpClient) {}
-  url = 'http://localhost:3000/category';
+  url = 'https://my-commentaries-app.onrender.com/category';
 
   getAllCategory(page:number,pageLimit:number):Observable<Category[]>{
  
