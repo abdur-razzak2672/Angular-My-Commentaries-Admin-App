@@ -4,7 +4,7 @@
         <a href="#" class="site-logo d-md-block d-lg-block d-none">My Commentaries Admin</a>
 
         <!-- Profile dropdown on the right side -->
-        <div   class="custom-dropdown d-flex ">
+        <div  *ngIf="user"  class="custom-dropdown d-flex ">
             <img [src]="user?.photoUrl" alt="Profile Image" class="profile-image rounded-circle">
             <div class=" ">
                 <div class="selected-value">
