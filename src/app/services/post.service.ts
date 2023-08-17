@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class PostService {
   constructor(private http:HttpClient) {}
-  url = 'http://localhost:3000/post';
+  url = 'https://my-commentaries-app.onrender.com/post';
 
   getAllPost(page:number,pageLimit:number):Observable<Post[]>{
  
